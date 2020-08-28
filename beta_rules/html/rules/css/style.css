@@ -1,0 +1,571 @@
+/* Fonts Custom*/
+
+@font-face{
+  font-family: "caviar_dreams_name";
+  src: url("../../fonts/caviar_dreams/CaviarDreams_BoldItalic.ttf");
+}
+
+@font-face{
+  font-family: "caviar_dreams_grade";
+  src: url("../../fonts/caviar_dreams/CaviarDreams.ttf");
+}
+
+@font-face{
+  font-family: "Fallout";
+  src: url("../../fonts/SoleSurvivor/SoleSurvivor.ttf");
+}
+
+@font-face{
+  font-family: "yorkwhiteletter";
+  src: url("../../fonts/yorkwhiteletter/yorkwhiteletter.otf"),
+       url("../../fonts/yorkwhiteletter/yorkwhiteletter.ttf");
+}
+
+/*///////////////////////////////////////*/
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu",sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+  transition: .3s linear;
+}
+
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.navbar .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 80px;
+  height: 70px;
+  background-image: url(../../images/btl2.png);
+  background-size: cover;
+}
+
+.menu-toggler{
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+
+.menu-toggler span{
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+
+.navbar-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .2s linear;
+}
+
+.navbar-menu a:hover{
+  color: #48dbfb !important;
+}
+
+.sticky{
+  background-color: #fff;
+  padding: 18px 0;
+}
+
+.sticky .logo{
+  background-image: url(../../images/btl2.png);
+}
+
+.sticky .navbar-menu a{
+  color: #111;
+}
+
+.sticky .menu-toggler span{
+  background-color: #111;
+}
+
+/* Section Home  */
+
+#home{
+  height: 100vh;
+  min-height: 500px;
+  background: url(../../images/gta-modding-compressed.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+#home .content{
+  width: 100%;
+  color: #fff;
+}
+
+#home .content h1{
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+#home .content .bienv{
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#home img{
+  width: 600px;
+}
+
+#home .buttons{
+  margin-top: 60px;
+}
+
+#home .buttons a:hover
+{
+  background-color: #48dbfb;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 980px){
+  .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #353b48;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
+  }
+
+  .navbar-menu a{
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .sticky .navbar-menu{
+    background-color: #f1f1f1;
+  }
+  
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
+
+/*///////////////////////////////////////*/
+
+/* start */
+#start{
+  background-color: rgb(170, 170, 170);
+}
+
+#start .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px 0px 5px;
+}
+
+#start .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#start .inner-width h5{
+  text-align: center;
+  padding: 10px 10px 10px;
+  font-size: 25px;
+}
+
+#start .inner-width .letter{
+  padding: 10px 0px 20px;
+  font-size: 20px;
+}
+
+#start .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* definition */
+
+#definition{
+  background-color: rgb(112, 233, 173);
+}
+
+#definition .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#definition .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: center;
+}
+
+#definition .inner-width .gen{
+  text-align: justify;
+}
+
+#definition .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* jobs-legal */
+#jobs-legal{
+  background-color: rgb(112, 195, 233);
+}
+
+#jobs-legal .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#jobs-legal .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: center;
+}
+
+#jobs-legal .inner-width .gen{
+  text-align: justify;
+}
+
+#jobs-legal .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+
+/*///////////////////////////////////////*/
+
+/* jobs-illegaux */
+#jobs-illegaux{
+  background-color: rgb(248, 126, 105);
+}
+
+#jobs-illegaux .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#jobs-illegaux .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: justify;
+}
+
+#jobs-illegaux .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+
+/*///////////////////////////////////////*/
+
+/* civil */
+#civil{
+  background-color: rgb(153, 248, 130);
+}
+
+#civil .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#civil .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: justify;
+}
+
+#civil .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* mortrp */
+#mortrp{
+  background-color: rgb(250, 235, 103);
+}
+
+#mortrp .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#mortrp .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: justify;
+}
+
+#mortrp .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* sanctions */
+#sanctions{
+  background-color: rgb(248, 126, 105);
+}
+
+#sanctions .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#sanctions .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: justify;
+}
+
+#sanctions .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* streaming */
+#streaming{
+  background-color: rgb(115, 161, 230);
+}
+
+#streaming .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#streaming .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: justify;
+}
+
+#streaming .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* regle-discord */
+#regle-discord{
+  background-color: rgb(213, 248, 130);
+}
+
+#regle-discord .inner-width h3{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 80px;
+  padding: 40px;
+}
+
+#regle-discord .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: justify;
+}
+
+#regle-discord .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 50px;
+  padding: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+/* section end */
+#end{
+  background-color: rgb(170, 170, 170);
+}
+
+#end .inner-width h3{
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  font-family: yorkwhiteletter;
+}
+
+#end .inner-width p{
+  padding: 10px 10px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#end .inner-width h4{
+  text-align: center;
+  font-family: yorkwhiteletter;
+  font-size: 30px;
+  padding: 40px;
+}
+
+#end .inner-width a{
+  font-size: 40px;
+  margin: 30px 49%;
+  color: rgb(91, 82, 224);
+}
+
+
+@media screen and (max-width: 937px){
+  #end .inner-width a{
+    font-size: 40px;
+    margin: 30px 47%;
+    color: rgb(91, 82, 224);
+  }
+}
+
+/*///////////////////////////////////////*/
+
+/* Footer */
+
+footer {
+  background-color: rgb(70, 67, 67);
+  height: 50px;
+}
+
+
+/* Section rslink */
+footer #rslink{
+  float: left;
+  display: flex;
+}
+
+footer #rslink .rsicon{
+  position: relative;
+  top: -5px
+}
+
+footer #rslink a{
+  color: #fff;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: .2s linear;
+}
+
+footer #rslink img{
+  width: 60px;
+  height: 50px;
+}
+
+footer #rslink .rsicon a{
+  padding: 20px 0px 1px;
+}
+
+/* Section sign */
+
+footer #sign{
+  float: right;
+  display: inline-flex;
+}
+
+footer #sign img{
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
+
+footer #sign p{
+  padding: 10px;
+  font-family: Fallout;
+  font-size: 25px;
+  max-height: 50px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 739px){
+  footer #sign p{
+    padding: 10px 10px;
+    font-family: Fallout;
+    font-size: 23px;
+  }
+}
+/*///////////////////////////////////////*/
